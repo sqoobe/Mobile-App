@@ -20,20 +20,22 @@ addButtonEl.addEventListener("click", function(){
     push(shoppingListInDB, inputValue)
 
     clearInputFieldEl()
-    appendItemToShoppingListEl(inputValue)
 })
 
 onValue (shoppingListInDB, function(snapshot){
     let itemsArray = Object.values(snapshot.val())
-    console.log(snapshot.val())
+
+    clearShoppingListEl()
 
     for (let i = 0; i < itemsArray.length; i++){
-
         appendItemToShoppingListEl(itemsArray[i])
     }
 
 })
 
+function clearShoppingListEl() {
+    shoppingListEl.innerHTML = ""
+}
 function clearInputFieldEl(){
     inputFieldEl.value = ""
 }
