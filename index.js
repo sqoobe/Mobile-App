@@ -27,6 +27,6 @@ function clearInputFieldEl(){
     inputFieldEl.value = ""
 }
 
-function appendItemToShoppingListEl(iteValue){
+function appendItemToShoppingListEl(itemValue){
     shoppingListEl.innerHTML += `<li>${itemValue}</li>`
 }
