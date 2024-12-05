@@ -8,15 +8,25 @@ const appSettings = {
 
 const app = initializeApp(appSettings)
 const database = getDatabase(app)
-const moviesInDB = ref(database, "shoppingList")
+const shoppingListInDB = ref(database, "shoppingList")
 
 const inputFieldEl = document.querySelector("#input-field")
 const addButtonEl = document.querySelector("#add-button")
+const shoppingListEl = document.querySelector("#shopping-list")
 
 addButtonEl.addEventListener("click", function(){
     let inputValue = inputFieldEl.value
 
-    push(moviesInDB, inputValue)
+    push(shoppingListInDB, inputValue)
 
-    console.log(inputValue)
+    clearInputFieldEl()
+    appendItemToShoppingListEl(inputValue)
 })
+
+function clearInputFieldEl(){
+    inputFieldEl.value = ""
+}
+
+function appendItemToShoppingListEl(iteValue){
+    shoppingListEl.innerHTML += `<li>${itemValue}</li>`
+}
