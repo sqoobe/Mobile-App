@@ -1,5 +1,6 @@
 {
   "name": "project",
+  "type": "module",
   "dependencies": {},
   "devDependencies": {
     "vite": "latest"
