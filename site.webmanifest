@@ -1,6 +1,6 @@
 {
-    "name": "Add to Cart",
-    "short_name": "Add to Cart",
+    "name": "sq00",
+    "short_name": "sq00",
     "icons":
         [
             {"src":"/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},
