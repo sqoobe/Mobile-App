@@ -44,6 +44,8 @@ button {
 button:hover {
     background-color: #08711f95;
     cursor: pointer;
+    box-shadow: 5px 5px 5px rgb(100, 110, 52),
+    -5px -5px 5px #e6d15c
 }
 
 ul {
@@ -69,4 +71,6 @@ ul li {
 ul li:hover {
     background-color: #c62e688b;
     cursor: pointer;
+    box-shadow: 5px 5px 5px rgb(100, 110, 52),
+    -5px -5px 5px #e6d15c
 }
