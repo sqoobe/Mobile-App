@@ -38,7 +38,7 @@ onValue (shoppingListInDB, function(snapshot){
             appendItemToShoppingListEl(currentItem)
         }    
     } else {
-        shoppingListEl.innerHTML = "No items here... yet"
+        shoppingListEl.innerHTML = "Nothing here... yet"
     }
     
     
@@ -60,7 +60,7 @@ function appendItemToShoppingListEl(item){
 
     newEl.textContent = itemValue
 
-    newEl.addEventListener("click", function() {
+    newEl.addEventListener("dblclick", function() {
         let exactLocationOfItemInDB = ref(database, `shoppingList/${itemID}`)
         
         remove(exactLocationOfItemInDB)
